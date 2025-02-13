@@ -241,11 +241,15 @@ a, a:visited, a:hover, a:active {
 
 
 .establishment {
-    font-size: 1.8em; /* Grand texte */
+    font-size: 1.5em; /* Ajuste la taille pour ne pas dépasser */
     font-weight: bold;
-    color: rgb(138,43,226); /* Violet */
+    color: rgb(138,43,226) !important; /* Violet */
     text-align: center;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Coupe le texte si nécessaire */
+    text-overflow: ellipsis; /* Ajoute "..." si trop long */
 }
+
 
 .establishment a {
     color: rgb(138,43,226) !important; /* Violet */
