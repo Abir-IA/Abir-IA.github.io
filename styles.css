@@ -241,24 +241,20 @@ a, a:visited, a:hover, a:active {
 
 
 .establishment {
-    font-size: 1.5em; /* Ajuste la taille pour ne pas dépasser */
+    font-size: 1.5em; /* Ajuste la taille pour éviter le dépassement */
     font-weight: bold;
     color: rgb(138,43,226) !important; /* Violet */
     text-align: center;
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    overflow: hidden; /* Coupe le texte si nécessaire */
-    text-overflow: ellipsis; /* Ajoute "..." si trop long */
+    white-space: nowrap; /* Empêche les sauts de ligne inutiles */
 }
 
-
 .establishment a {
-    color: rgb(138,43,226) !important; /* Violet */
-    text-decoration: none;
+    color: rgb(138,43,226) !important; /* Rend le texte violet */
+    text-decoration: none; /* Supprime le soulignement */
     font-weight: bold;
 }
 
 .establishment a:hover {
-    color: darkorchid !important; /* Changement au survol */
-    text-decoration: underline;
+    color: darkorchid !important; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
 }
-
