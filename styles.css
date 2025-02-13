@@ -217,7 +217,7 @@ table {
     background: white;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-top: 20px; /* Augmente la marge au-dessus des tableaux */
-    margin-bottom: 40px; /* Ajoute un espace sous chaque tableau */
+    margin-bottom: 20px; /* Ajoute un espace sous chaque tableau */
 }
 
 tr {
@@ -243,14 +243,15 @@ a, a:visited, a:hover, a:active {
     color: rgb(138,43,226) !important;
 }
 
-/* Espacement entre les établissements et les tableaux */
+/* Réduction de l'espacement entre les établissements et les tableaux */
 .establishment {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
     color: rgb(138,43,226); /* Violet */
     text-align: left;
-    padding: 20px 0; /* Augmente l’espace au-dessus et en dessous */
-    margin-top: 40px; /* Ajoute plus d'espace avant le titre */
+    padding: 5px 0;
+    margin-top: 10px; /* Réduit l’espace au-dessus */
+    margin-bottom: 5px; /* Réduit l’espace en dessous */
 }
 
 /* Espacement entre les sections */
