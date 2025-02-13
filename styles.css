@@ -258,3 +258,15 @@ a, a:visited, a:hover, a:active {
     color: darkorchid !important; /* Change la couleur au survol */
     text-decoration: underline; /* Ajoute un soulignement au survol */
 }
+
+
+.year {
+    color: #008000; /* Vert pour les années */
+    font-weight: bold;
+}
+
+.support a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
