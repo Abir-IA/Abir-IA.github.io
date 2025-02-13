@@ -252,3 +252,13 @@ a, a:visited, a:hover, a:active {
     padding: 20px 0; /* Augmente l’espace au-dessus et en dessous */
     margin-top: 40px; /* Ajoute plus d'espace avant le titre */
 }
+
+/* Espacement entre les sections */
+.year-section {
+    font-size: 2em;
+    font-weight: bold;
+    color: #008000; /* Vert */
+    margin-top: 60px; /* Grand espacement avant chaque année */
+    padding: 15px 0;
+    text-align: left;
+}
