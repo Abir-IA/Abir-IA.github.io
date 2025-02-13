@@ -263,3 +263,13 @@ a, a:visited, a:hover, a:active {
     padding: 15px 0;
     text-align: left;
 }
+
+/* Réduction de l'espacement entre les années et les établissements */
+.year-section {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #008000; /* Vert */
+    margin-top: 30px; /* Moins d'espace au-dessus */
+    margin-bottom: 10px; /* Moins d'espace en dessous */
+    padding: 5px 0;
+}
