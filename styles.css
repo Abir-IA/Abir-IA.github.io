@@ -243,4 +243,12 @@ a, a:visited, a:hover, a:active {
     color: rgb(138,43,226) !important;
 }
 
-
+/* Espacement entre les établissements et les tableaux */
+.establishment {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(138,43,226); /* Violet */
+    text-align: left;
+    padding: 20px 0; /* Augmente l’espace au-dessus et en dessous */
+    margin-top: 40px; /* Ajoute plus d'espace avant le titre */
+}
