@@ -250,7 +250,7 @@ a, a:visited, a:hover, a:active {
     color: rgb(138,43,226); /* Violet */
     text-align: left;
     padding: 5px 0;
-    margin-top: 10px; /* Réduit l’espace au-dessus */
+    margin-top: 5px; /* Réduit l’espace au-dessus */
     margin-bottom: 5px; /* Réduit l’espace en dessous */
 }
 
@@ -259,7 +259,7 @@ a, a:visited, a:hover, a:active {
     font-size: 1.8em;
     font-weight: bold;
     color: #008000; /* Vert */
-    margin-top: 30px; /* Moins d'espace au-dessus */
+    margin-top: 10px; /* Moins d'espace au-dessus */
     margin-bottom: 10px; /* Moins d'espace en dessous */
     padding: 5px 0;
 }
