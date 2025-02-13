@@ -240,33 +240,3 @@ a, a:visited, a:hover, a:active {
 }
 
 
-.establishment {
-    font-size: 1.5em; /* Ajuste la taille pour éviter le dépassement */
-    font-weight: bold;
-    color: rgb(138,43,226) !important; /* Violet */
-    text-align: center;
-    white-space: nowrap; /* Empêche les sauts de ligne inutiles */
-}
-
-.establishment a {
-    color: rgb(138,43,226) !important; /* Rend le texte violet */
-    text-decoration: none; /* Supprime le soulignement */
-    font-weight: bold;
-}
-
-.establishment a:hover {
-    color: darkorchid !important; /* Change la couleur au survol */
-    text-decoration: underline; /* Ajoute un soulignement au survol */
-}
-
-
-.year {
-    color: #008000; /* Vert pour les années */
-    font-weight: bold;
-}
-
-.support a {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
-}
