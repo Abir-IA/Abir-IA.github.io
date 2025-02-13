@@ -216,8 +216,8 @@ table {
     white-space: normal;
     background: white;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-top: 20px; /* Augmente la marge au-dessus des tableaux */
-    margin-bottom: 20px; /* Ajoute un espace sous chaque tableau */
+    margin-top: 10px; /* Augmente la marge au-dessus des tableaux */
+    margin-bottom: 10px; /* Ajoute un espace sous chaque tableau */
 }
 
 tr {
@@ -259,7 +259,7 @@ a, a:visited, a:hover, a:active {
     font-size: 1.8em;
     font-weight: bold;
     color: #008000; /* Vert */
-    margin-top: 10px; /* Moins d'espace au-dessus */
-    margin-bottom: 10px; /* Moins d'espace en dessous */
+    margin-top: 5px; /* Moins d'espace au-dessus */
+    margin-bottom: 5px; /* Moins d'espace en dessous */
     padding: 5px 0;
 }
