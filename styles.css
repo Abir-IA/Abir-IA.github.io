@@ -214,6 +214,10 @@ table {
     border: 1px solid rgba(0,0,0,.12);
     font-size: 13px;
     white-space: normal;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 20px; /* Augmente la marge au-dessus des tableaux */
+    margin-bottom: 40px; /* Ajoute un espace sous chaque tableau */
 }
 
 tr {
