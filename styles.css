@@ -238,3 +238,23 @@ th {
 a, a:visited, a:hover, a:active {
     color: rgb(138,43,226) !important;
 }
+
+
+.establishment {
+    font-size: 1.8em; /* Grand texte */
+    font-weight: bold;
+    color: rgb(138,43,226); /* Violet */
+    text-align: center;
+}
+
+.establishment a {
+    color: rgb(138,43,226) !important; /* Violet */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.establishment a:hover {
+    color: darkorchid !important; /* Changement au survol */
+    text-decoration: underline;
+}
+
