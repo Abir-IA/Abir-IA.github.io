@@ -1,0 +1,122 @@
+# ---------------------------------------------------------------
+# Teaching. Most recent academic year first.
+# To add a year, copy a whole block starting at "- year:" and edit it.
+#
+#   hours: free text, e.g. "6 h lectures, 28 h labs"
+#   role:  list of responsibilities, one per line starting with "- "
+#
+# Always keep the double quotes around each value, and keep the
+# indentation (spaces at the start of lines) exactly as it is.
+# ---------------------------------------------------------------
+
+- year: "2023–2024"
+  institutions:
+    - name: "ICN Business School"
+      url: "https://www.icn-artem.com/"
+      courses:
+        - course: "Data Analysis"
+          level: "PGE3 / MSc2"
+          hours: "30 h lectures and tutorials"
+          role:
+            - "Lectures, tutorials and labs"
+            - "Project supervision"
+            - "Exam and project grading"
+
+- year: "2020–2021"
+  institutions:
+    - name: "IDMC, Université de Lorraine"
+      url: "https://idmc.univ-lorraine.fr/"
+      courses:
+        - course: "Web Technologies"
+          level: "L1 MIASHS"
+          hours: "14 h labs"
+          role:
+            - "Labs"
+            - "Exam and project grading"
+        - course: "Advanced Web"
+          level: "L2 MIASHS"
+          hours: "24 h labs"
+          role:
+            - "Labs"
+        - course: "Algorithms and Programming 2"
+          level: "L1 MIASHS"
+          hours: "15 h labs"
+          role:
+            - "Labs"
+            - "Exam and project grading"
+        - course: "Databases"
+          level: "L2 MIASHS (shared course)"
+          hours: "6 h lectures, 28 h labs"
+          role:
+            - "Lectures and labs (1 group)"
+            - "Course material, lab subjects and exam design"
+            - "Exam and project grading"
+        - course: "Object-Oriented Design"
+          level: "M1 MIAGE"
+          hours: "15 h lectures, 40 h labs"
+          role:
+            - "Lectures and labs (2 groups)"
+            - "Course material, lab subjects and exam design"
+            - "Exam and project grading"
+        - course: "NUMOC: Digital Tools and Culture"
+          level: "L1 (all Université de Lorraine programmes)"
+          hours: "29.5 h labs"
+          role:
+            - "Support classes"
+
+- year: "2019–2020"
+  institutions:
+    - name: "IDMC, Université de Lorraine"
+      url: "https://idmc.univ-lorraine.fr/"
+      courses:
+        - course: "Algorithms and Programming 2"
+          level: "L1 MIASHS"
+          hours: "14 h labs"
+          role:
+            - "Labs"
+            - "Exam and project grading"
+        - course: "Algorithmic Complexity"
+          level: "L3 MIAGE"
+          hours: "15 h tutorials"
+          role:
+            - "Tutorials"
+        - course: "Databases"
+          level: "L2 MIASHS (shared course)"
+          hours: "6 h lectures, 42 h labs"
+          role:
+            - "Lectures and labs (3 groups)"
+            - "Course material, lab subjects and exam design"
+            - "Exam and project grading"
+        - course: "Object-Oriented Design"
+          level: "M1 MIAGE"
+          hours: "10.5 h lectures, 16 h tutorials"
+          role:
+            - "Lectures and labs (2 groups)"
+            - "Course material, lab subjects and exam design"
+            - "Exam and project grading"
+        - course: "Networks"
+          level: "M1 MIAGE"
+          hours: "40 h"
+          role:
+            - "Lectures and labs (2 groups)"
+
+- year: "2018–2019"
+  institutions:
+    - name: "IUT Nancy-Charlemagne"
+      url: "https://iut-charlemagne.univ-lorraine.fr/"
+      courses:
+        - course: "Data Structures"
+          level: "DUT Informatique, 1st year"
+          hours: "44 h"
+          role:
+            - "Integrated lectures, tutorials and labs"
+            - "Exam grading"
+    - name: "Université de Lorraine, Master SID"
+      url: "https://cfa.univ-lorraine.fr/nos-formations/masters/master-miage.html"
+      courses:
+        - course: "Industrial Case Studies"
+          level: "M2 SID (Decision Support Information Systems)"
+          hours: "6 h"
+          role:
+            - "Presentation of project subjects"
+            - "Presentation of the technologies and tools to use"

@@ -1,0 +1,92 @@
+# ---------------------------------------------------------------
+# Publications. To add one, copy a block (from "- type:" to the last
+# line of the block), paste it at the TOP of this list and edit it.
+#
+#   type:    thesis | journal | conference
+#   status:  optional, e.g. "Submitted" or "In press" (remove the line once published)
+#   link:    optional, address of the PDF or of the publication page
+#   link_label: optional, text of the link (default: "PDF")
+#   lang:    optional, "fr" when the title is in French
+#
+# Always keep the double quotes around each value.
+# ---------------------------------------------------------------
+
+- type: "journal"
+  authors: "Abir Ismaili Alaoui, Yinling Liu, Hind Bril El Haouzi"
+  title: "An Adaptive Capability Maturity Model to Assess and Enhance Industries Readiness for Digital Twins"
+  venue: "International Journal of Computer Integrated Manufacturing (IJCIM)"
+  year: "2025"
+  status: "Submitted, February 2025"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Hind Bril El Haouzi"
+  title: "Jumeaux numériques : vers une priorisation, raffinement et dérivation des exigences pour l'industrie du futur"
+  lang: "fr"
+  venue: "3e Congrès annuel de la SAGIP (Société d'Automatique, de Génie Industriel et de Productique)"
+  year: "2025"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Emmanuel Zimmermann, Yinling Liu, Guillaume Demesure, Hind Bril El Haouzi"
+  title: "Towards a Digital Twin architecture based on MAPE-K framework and Holonic Paradigm: Application to an Emergency Department and Smart Manufacturing case studies"
+  venue: "14th International Workshop on Service-Oriented, Holonic and Multi-Agent Manufacturing Systems for Industry of the Future (SOHOMA)"
+  year: "2024"
+  link: "https://www.researchgate.net/publication/388707505_Towards_a_Digital_Twin_architecture_based_on_MAPE-K_framework_and_Holonic_Paradigm_Application_to_an_Emergency_Department_and_Smart_Manufacturing_cases_studies"
+  link_label: "ResearchGate"
+
+- type: "thesis"
+  authors: "Abir Ismaili Alaoui"
+  title: "Methodology for an Augmented Business Process Management in IoT Environment"
+  venue: "PhD thesis, Université de Lorraine and Université Mohammed V (cotutelle)"
+  year: "2022"
+  link: "https://hal.univ-lorraine.fr/tel-04062128v1/document"
+
+- type: "journal"
+  authors: "Abir Ismaili Alaoui, Karim Baïna, Khalid Benali"
+  title: "IoDEP: Towards an IoT-Data Analysis and Event Processing Architecture for Business Process Incident Management"
+  venue: "International Journal of Advanced Computer Science and Applications (IJACSA), 13(4)"
+  year: "2022"
+  link: "https://thesai.org/Downloads/Volume13No4/Paper_104-IoDEP_Towards_an_IoT_Data_Analysis_and_Event_Processing_Architecture.pdf"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Khalid Benali, Karim Baïna"
+  title: "Traitement des événements complexes pour une gestion proactive des instances d'un processus métier"
+  lang: "fr"
+  venue: "INFormatique des ORganisations et Systèmes d'Information et de Décision (INFORSID)"
+  year: "2022"
+  link: "https://hal.science/hal-03892829/document"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Ouafae Kasmi, Amine Baïna, Karim Baïna, Khalid Benali, Mostafa Bellafkih"
+  title: "Priority-based Event Management using Fuzzy Logic for an IoT-BPM Architecture"
+  venue: "IEEE 12th Conference on Service-Oriented Computing and Applications (SOCA)"
+  year: "2019"
+  link: "https://inria.hal.science/hal-02413950/document"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Karim Baïna, Khalid Benali"
+  title: "Harnessing the power of data and event data for Business Process Improvement"
+  venue: "Complexity Analysis of Industrial Systems and Advanced Modeling (CAISAM)"
+  year: "2019"
+  link: "https://inria.hal.science/hal-02504017/file/CAISAM1_2019.pdf"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Khalid Benali, Karim Baïna, Jamal Baïna"
+  title: "Towards smart incident management under human resource constraints for an IoT-BPM hybrid architecture"
+  venue: "International Conference on Web Services (ICWS)"
+  year: "2018"
+  link: "https://inria.hal.science/hal-01843095/file/Smart%20incident%20management_18_Abir%20Alaoui%20Ismaili.pdf"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Khalid Benali, Karim Baïna, Jamal Baïna"
+  title: "Business Process Instances Scheduling with human resources based on event priority determination"
+  venue: "International Conference on Big Data, Cloud and Applications (BDCA)"
+  year: "2018"
+  link: "https://inria.hal.science/hal-01889906/file/Business%20process%20instances%20scheduling_18_Abir%20Alaoui.pdf"
+
+- type: "conference"
+  authors: "Abir Ismaili Alaoui, Jihane Lakhrouit, Karim Baïna"
+  title: "Toward an improved BPM using Big Data technology"
+  venue: "5th International Symposium ISKO-Maghreb"
+  year: "2016"
+  link: "https://www.isko-maghreb.org/"
+  link_label: "Conference site"
