@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------
+# Site-wide information. Edit a value here and it changes on EVERY page.
+# Keep the quotes around values. After editing, commit: GitHub rebuilds
+# the site automatically in about one minute.
+# ---------------------------------------------------------------
+
+title: "Abir Ismaili Alaoui"
+role: "Assistant Professor"
+description: "Abir Ismaili Alaoui is an Assistant Professor at Université de Lorraine (CRAN laboratory). Her research covers digital twins, process mining and multi-agent systems."
+url: "https://abir-ia.github.io"
+lang: "en"
+
+# Affiliation shown under the name
+university: "Université de Lorraine"
+university_url: "https://www.univ-lorraine.fr/"
+department: "MPSI Department"
+department_url: "https://www.cran.univ-lorraine.fr/departements/mpsi/"
+lab: "CRAN laboratory"
+lab_url: "https://www.cran.univ-lorraine.fr/"
+
+# Contact
+email: "abir.ismaili-alaoui@univ-lorraine.fr"
+address:
+  - "CRAN Laboratory"
+  - "Campus Sciences, BP 70239"
+  - "54506 Vandœuvre-lès-Nancy, France"
+
+# Files
+photo: "images/abir-ismaili-alaoui.jpg"
+cv: "CV/AbirAlaoui-cv.pdf"
+
+# Profile links (order = display order)
+profiles:
+  - name: "ORCID"
+    url: "https://orcid.org/0000-0001-5305-8407"
+  - name: "Google Scholar"
+    url: "https://scholar.google.fr/citations?user=I0FLtakAAAAJ"
+  - name: "LinkedIn"
+    url: "https://linkedin.com/in/abiralaouiismaili"
+  - name: "GitHub"
+    url: "https://github.com/Abir-IA"
+  - name: "X"
+    url: "https://x.com/AbirAlaouii"
+
+# Google Search Console ownership check (do not remove)
+google_site_verification: "BA4_j21UfIAzR2_hyQA-AGBZIS9pHujegPInThtOmW0"
+
+# ---------------------------------------------------------------
+# Technical settings (no need to touch)
+# ---------------------------------------------------------------
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

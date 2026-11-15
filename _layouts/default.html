@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.name == "index.html" %}
+    <title>{{ site.title }} – {{ site.role }}, {{ site.university }}</title>
+    {% else %}
+    <title>{{ page.title }} – {{ site.title }}</title>
+    {% endif %}
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="author" content="{{ site.title }}">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.name == 'index.html' %}{{ site.title }}{% else %}{{ page.title }} – {{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.photo }}">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+
+    {% if page.name == "index.html" %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.title }}",
+        "jobTitle": "{{ site.role }}",
+        "url": "{{ site.url }}/",
+        "image": "{{ site.url }}/{{ site.photo }}",
+        "email": "mailto:{{ site.email }}",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "{{ site.university }}", "url": "{{ site.university_url }}" },
+        "worksFor": { "@type": "ResearchOrganization", "name": "CRAN – Centre de Recherche en Automatique de Nancy", "url": "{{ site.lab_url }}" },
+        "sameAs": [{% for profile in site.profiles %}"{{ profile.url }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    }
+    </script>
+    {% endif %}
+</head>
+
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <div class="banner" role="presentation"></div>
+
+    <div class="shell">
+
+        <header class="identity">
+            <img class="identity__photo" src="{{ site.photo }}" alt="Portrait of {{ site.title }}" width="480" height="480">
+            <p class="identity__name">{{ site.title }}</p>
+            <p class="identity__role">
+                {{ site.role }} at <a href="{{ site.university_url }}">{{ site.university }}</a>.
+                Research in the <a href="{{ site.department_url }}">{{ site.department }}</a>
+                of the <a href="{{ site.lab_url }}">{{ site.lab }}</a>.
+            </p>
+
+            <ul class="identity__links">
+                <li class="identity__email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                {% for profile in site.profiles %}
+                <li><a href="{{ profile.url }}" rel="me">{{ profile.name }}</a></li>
+                {% endfor %}
+            </ul>
+
+            <address class="identity__address">
+                {% for line in site.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+            </address>
+        </header>
+
+        <div class="page">
+            <nav class="menu" aria-label="Main">
+                <ul>
+                    {% for item in site.data.navigation %}
+                    <li><a href="{{ item.file }}"{% if page.name == item.file %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+                    {% endfor %}
+                    <li><a href="{{ site.cv }}" title="Curriculum vitae (PDF, in French)">CV <span class="menu__hint">(PDF, in French)</span></a></li>
+                </ul>
+            </nav>
+
+            <main id="content">
+{{ content }}
+            </main>
+
+            <footer class="footer">
+                <p>© {{ site.time | date: "%Y" }} {{ site.title }}. Last updated {{ site.time | date: "%B %Y" }}.</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>

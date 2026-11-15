@@ -1,364 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Abir Alaoui Ismaili">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        
-        <title>Abir Alaoui Ismaili</title>
+---
+layout: default
+title: Teaching
+description: "Courses taught by Abir Ismaili Alaoui at Université de Lorraine (IDMC, IUT Nancy-Charlemagne) and ICN Business School: databases, object-oriented design, algorithms, web technologies, data analysis."
+---
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-purple.min.css">
-        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
+<!-- The courses live in _data/teaching.yml : add new years and courses there. -->
 
-    <body>
-        <div class="mdl-grid">
-            <!-- Carte d'identité -->
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp mdl-cell--top" id="id-card">
-                <div class="center">
-                    <div id="id-picture" class="id-block">
-                        <img src="images/aalaoui.jfif" />
-                    </div>
-                    <div class="id-block">
-                        <p id="id-title">Abir Alaoui Ismaili</p>
-                        <p id="id-subtitle">
-                            Postdoctoral Researcher at <a href="https://www.univ-lorraine.fr/">Université de Lorraine</a><br />
-                            Research within the <a href="https://www.cran.univ-lorraine.fr/departements/mpsi/">MPSI Department</a><br />
-                            of the <a href="https://www.cran.univ-lorraine.fr/">CRAN laboratory</a>.<br />
-                        </p>
-                    </div>
-                    <div id="profiles" class="id-block">
-                        <a href="mailto:abir.ismaili-alaoui@univ-lorraine.fr"><img src="images/mail.png" /></a>
-                        <a href="https://orcid.org/0000-0001-5305-8407"><img src="images/orcid.png" alt="ORCID iD icon"></a>                        
-                        <a href="https://scholar.google.fr/citations?user=I0FLtakAAAAJ&hl=fr&oi=ao"><img src="images/scholar.png" /></a>
-                        <a href="https://linkedin.com/in/abiralaouiismaili"><img src="images/in.png" /></a>
-                        <a href="https://github.com/Abir-IA"><img src="images/github.png" /></a>
-                        <a href="https://x.com/AbirAlaouii"><img src="images/X.png" /></a>
-                    </div>
-                    <div id="address">
-                        <div class="material-icons" style="vertical-align: middle;">
-                            location_on
-                        </div>
-                        <p>
-                            CRAN Laboratory<br />
-                            Campus Sciences BP 70239 <br />
-                            54506, Vandœuvre-lès-Nancy, France
-                        </p>
-                    </div>
-                </div>
-            </div>
-         <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
-                <div class="mdl-card__title">
-                    <div class="menu-bar">
-                        <a href="index.html" class="menu-item active">About</a>
-                        <a href="cv/AbirAlaoui-cv.pdf" class="menu-item">CV</a>
-                        <a href="publications.html" class="menu-item">Publications</a>
-                        <a href="teaching.html" class="menu-item">Teaching</a>
-                        <a href="supervision.html" class="menu-item">Supervision</a>
-                        <a href="talks.html" class="menu-item">Invited Talks</a>
-                        <a href="services.html" class="menu-item">Community Services</a>
-                        <a href="projects.html" class="menu-item">Projects</a>
-                    </div>
-            </div>
+<h1>Teaching</h1>
 
+<p>
+    Between 2018 and 2024 I taught about 460 hours (TD-equivalent), from first-year undergraduate
+    to second-year Master's level. Course names are translated from French.
+</p>
 
-            <div class="mdl-card__supporting-text">
-                    <h1>Teaching Activities</h1>
+{% for block in site.data.teaching %}
+<h2>{{ block.year }}</h2>
 
+{% for inst in block.institutions %}
+<h3><a href="{{ inst.url }}">{{ inst.name }}</a></h3>
 
-
-<!-- 2023 - 2024 -->
-<div class="year-section">2023 - 2024</div>
-<div class="establishment"><a href="https://www.icn-artem.com/">ICN Business School</a></div>
-
-<table>
+<table class="courses">
     <thead>
         <tr>
-            <th>Cours</th>
-            <th>Niveau Universitaire</th>
-            <th>Volume Horaire</th>
-            <th>Responsabilités</th>
-            <th>Support</th>
+            <th scope="col">Course</th>
+            <th scope="col">Level</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Responsibilities</th>
         </tr>
     </thead>
     <tbody>
+        {% for c in inst.courses %}
         <tr>
-            <td>Analyse de données</td>
-            <td>PGE3/MSc2</td>
-            <td>30h (CM-TD)</td>
-            <td class="details">
+            <th scope="row">{{ c.course }}</th>
+            <td data-label="Level">{{ c.level }}</td>
+            <td data-label="Hours">{{ c.hours }}</td>
+            <td data-label="Responsibilities">
                 <ul>
-                    <li>Chargée de CM + TD/TP</li>
-                    <li>Projet</li>
-                    <li>Correction Examens + Projets</li>
+                    {% for r in c.role %}<li>{{ r }}</li>{% endfor %}
                 </ul>
             </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
-
-<!-- 2020 - 2021 -->
-<div class="year-section">2020 - 2021</div>
-<div class="establishment"><a href="https://idmc.univ-lorraine.fr/">IDMC</a></div>
-
-<table>
-    <thead>
-        <tr>
-            <th>Cours</th>
-            <th>Niveau Universitaire</th>
-            <th>Volume Horaire</th>
-            <th>Responsabilités</th>
-            <th>Support</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Technologies Web</td>
-            <td>L1 MIASHS</td>
-            <td>14h TP</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de TP</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-        <tr>
-            <td>Web Avancé</td>
-            <td>L2 MIASHS</td>
-            <td>24h TP</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de TP</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-        <tr>
-            <td>Algorithmique - Programmation 2</td>
-            <td>L1 MIASHS</td>
-            <td>15h TP</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de TP</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-        <tr>
-            <td>Base de Données</td>
-            <td>L2 MIASHS - Cours commun</td>
-            <td>6h CM - 28h TP </td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TP (1 Groupe)</li>
-                    <li> Préparation des supports de cours, des sujets de TP, et Examen</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-        <tr>
-            <td>Conception Orientée Objet</td>
-            <td>M1 MIAGE</td>
-            <td>15h CM - 40h TP </td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TP (2 Groupes)</li>
-                    <li> Préparation des supports de cours, des sujets de TP, et Examen</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-        <tr>
-            <td>NUMOC: Outils et Cultures NUMériques</td>
-            <td>L1 (de toute l’université de Lorraine)</td>
-            <td>29.5h TP</td>
-            <td class="details">
-                <ul>
-                    <li>cours de soutien</li>
-               </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- 2019 - 2020 -->
-<div class="year-section">2019 - 2020</div>
-<div class="establishment"><a href="https://idmc.univ-lorraine.fr/">IDMC</a></div>
-
-<table>
-    <thead>
-        <tr>
-            <th>Cours</th>
-            <th>Niveau Universitaire</th>
-            <th>Volume Horaire</th>
-            <th>Responsabilités</th>
-            <th>Support</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Algorithmique - Programmation 2</td>
-            <td>L1 MIASHS</td>
-            <td>14h TP</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de TP</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-        <tr>
-            <td>Complexité Algorithmique</td>
-            <td>L3 MIAGE</td>
-            <td>15h TP</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de TD</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-        <tr>
-            <td>Base de Données</td>
-            <td>L2 MIASHS - Cours commun</td>
-            <td>6h CM - 42h TP </td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TP (3 Groupes)</li>
-                    <li> Préparation des supports de cours, des sujets de TP, et Examen</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-         <tr>
-            <td>Conception Orientée Objet</td>
-            <td>M1 MIAGE</td>
-            <td>10.5h CM - 16h TD </td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TP (2 Groupes)</li>
-                    <li> Préparation des supports de cours, des sujets de TP, et Examen</li>
-                    <li>Correction des examens et projets</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-
-        <tr>
-            <td>Réseau</td>
-            <td>M1 MIAGE</td>
-            <td>40h </td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TP (2 Groupes)</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- 2018 - 2019 -->
-<div class="year-section">2018 - 2019</div>
-
-<!-- IUT Nancy Charlemagne -->
-<div class="establishment">
-    <a href="https://iut-charlemagne.univ-lorraine.fr/">IUT Nancy Charlemagne</a>
-</div>
-
-<table>
-    <thead>
-        <tr>
-            <th>Cours</th>
-            <th>Niveau Universitaire</th>
-            <th>Volume Horaire</th>
-            <th>Responsabilités</th>
-            <th>Support</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Structure de Données</td>
-            <td>DUT Informatique 1A</td>
-            <td>44h</td>
-            <td class="details">
-                <ul>
-                    <li>Chargée de CM + TD/TP (Enseignement Intégré)</li>
-                    <li>Correction des examens</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- UL - SID -->
-<div class="establishment">
-    <a href="https://cfa.univ-lorraine.fr/nos-formations/masters/master-miage.html">UL - SID</a>
-</div>
-
-<table>
-    <thead>
-        <tr>
-            <th>Cours</th>
-            <th>Niveau Universitaire</th>
-            <th>Volume Horaire</th>
-            <th>Responsabilités</th>
-            <th>Support</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mise en Oeuvre de Cas Industriels</td>
-            <td>Master 2 SID (Systèmes d'Informations Décisionnels)</td>
-            <td>6h</td> 
-            <td class="details">
-                <ul>
-                    <li>Présentation des sujets de projets</li>
-                    <li>Présentations des technologies et outils à utiliser</li>
-                </ul>
-            </td>
-            <td class="support"> <!--<a href="#">Télécharger</a>  --></td>
-        </tr>
-    </tbody>
-</table>
-
-
-                
-
-                
-
-                </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone">
-            </div>
-
-            <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp" id="footer-card">
-                <div class="mdl-card__supporting-text">
-                    <p>Last update: April 24, 2025</p>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
-
-           
+{% endfor %}
+{% endfor %}

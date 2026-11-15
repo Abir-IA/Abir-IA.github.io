@@ -1,0 +1,17 @@
+# Menu shown on every page (order = display order).
+# "file" must match the name of the page file exactly.
+
+- label: "About"
+  file: "index.html"
+- label: "Publications"
+  file: "publications.html"
+- label: "Projects"
+  file: "projects.html"
+- label: "Teaching"
+  file: "teaching.html"
+- label: "Supervision"
+  file: "supervision.html"
+- label: "Talks"
+  file: "talks.html"
+- label: "Services"
+  file: "services.html"
