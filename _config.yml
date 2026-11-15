@@ -19,7 +19,7 @@ lab: "CRAN laboratory"
 lab_url: "https://www.cran.univ-lorraine.fr/"
 
 # Contact
-email: "abir.ismaili-alaoui@univ-lorraine.fr"
+#email: "abir.ismaili-alaoui@univ-lorraine.fr"
 address:
   - "CRAN Laboratory"
   - "Campus Sciences, BP 70239"
